@@ -1,0 +1,4 @@
+#!/bin/sh
+now=$(date +"%T")
+echo "Time Stamp: $now"
+adb push ./android/build/outputs/apk/android-debug.apk /sdcard/download
