@@ -300,14 +300,13 @@ public class GameScreen implements Screen{
                         animatingBombs.remove(b);
 
                         b.body.setTransform(
-                                2 + random.nextInt(7-1+1),
-                                h / 100f + b.sprite.getHeight()/200 + random.nextInt(
+                                0.5f + random.nextInt(8),
+                                h / 100f + b.sprite.getHeight()/200f + random.nextInt(
                                         (int)(h / 100f + b.sprite.getHeight()/200f
                                                 + 1 - h / 100f
                                                 + b.sprite.getHeight()/200f
                                                 +1)),
                                 b.body.getAngle());
-
                         b.body.setAwake(true);
                         moveBodiesBuffer.remove(b.body);
                     }
